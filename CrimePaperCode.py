@@ -7,6 +7,7 @@ Created on Fri Mar  5 21:55:20 2021
 import datetime
 
 x=datetime.datetime(2021,1,25,23,12,10)
+
 def find_fraction(dt):
     h=dt.hour 
     if h<=6:
@@ -22,9 +23,10 @@ def find_fraction(dt):
 
 import pandas as pd
 dataset = pd.read_csv(r"ds.csv")
-
+#split independent and dependent variables
 x=dataset.iloc[:, 0:5].values
 y=dataset.iloc[:,5].values
+#normalize
 
 from sklearn.preprocessing import StandardScaler
 sc=StandardScaler()
