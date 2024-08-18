@@ -22,6 +22,7 @@ def find_fraction(dt):
 
 
 import pandas as pd
+#import dataset
 dataset = pd.read_csv(r"ds.csv")
 #split independent and dependent variables
 x=dataset.iloc[:, 0:5].values
