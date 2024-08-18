@@ -21,6 +21,7 @@ def find_fraction(dt):
 
 
 import pandas as pd
+#import dataset
 dataset = pd.read_csv(r"ds.csv")
 
 x=dataset.iloc[:, 0:5].values
